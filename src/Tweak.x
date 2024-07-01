@@ -59,14 +59,6 @@ BOOL dmVisualMsgsViewedButtonEnabled = false;
             [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"call_confirm"];
             [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"no_suggested_chats"];
             [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"no_suggested_threads"];
-
-            // Display settings modal on screen
-            NSLog(@"[SCInsta] Displaying SCInsta first-time settings modal");
-            UIViewController *rootController = [[self window] rootViewController];
-            SCISettingsViewController *settingsViewController = [SCISettingsViewController new];
-            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
-            
-            [rootController presentViewController:navigationController animated:YES completion:nil];
         }
 
     }
